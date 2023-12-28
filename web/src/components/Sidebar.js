@@ -23,7 +23,7 @@ export default function Sidebar({setGraph}) {
             toast.warning("Graph data has not changed!")
             return
         }
-        axios.post("http://localhost:8000/get_ascii/", {"data": data}).then((res) => {
+        axios.post("http://api.graphscii.raybb.dev/get_ascii/", {"data": data}).then((res) => {
             setGraph(res.data)
             setUnsaved(false)
             toast.success("Got layout for graph!")

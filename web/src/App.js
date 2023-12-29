@@ -33,7 +33,7 @@ function App() {
                 <div className={"w-[22rem] min-w-[22rem] mobile:w-full mobile:h-1/2 overflow-hidden flex-none"}>
                     <Sidebar setGraph={setGraph}/>
                 </div>
-                <div className={"flex-auto overflow-x-scroll p-8 mobile:p-4 grid display-items-stretch"}>
+                <div className={"flex-auto overflow-x-scroll p-4 grid display-items-stretch"}>
                     <Display graph={graph}/>
                 </div>
             </div>
